@@ -2,23 +2,31 @@
   --bs-body-font-family: helvetica, sans-serif;
 }
 
-.custom-cointainer {
-  max-width: 2000px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-container {
+  max-width: 1440px;
   margin: auto;
 }
 
 .jumbotron {
   background-image: linear-gradient(to top, #f1f3ff, #ffffff);
   overflow: hidden;
+  height: 520px;
 }
 
 .car-img-section {
-  width: 95vw;
-  margin-left: 5%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .main-content {
-  margin-top: 80px;
+  margin-top: 140px;
 }
 
 .btn-success {
@@ -55,7 +63,7 @@
 }
 
 .carousel-cell {
-  width: 75%;
+  width: 50%;
   margin: 0 20px;
 }
 
@@ -84,17 +92,17 @@
   margin-top: 200px;
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1440px) {
   .flickity-prev-next-button {
-    margin-top: 210px;
+    margin-top: 230px;
     border: 1px solid;
     transition: 0.3s;
-    margin-right: 46%;
-    margin-left: 46%;
+    margin-right: 45%;
+    margin-left: 45%;
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1449px) {
+@media (min-width: 1400px) and (max-width: 1440px) {
   .flickity-prev-next-button {
     margin-top: 250px;
     border: 1px solid;
@@ -132,9 +140,21 @@
     margin-right: 38%;
     margin-left: 38%;
   }
+
+  .jumbotron {
+    min-height: 900px;
+  }
 }
 
-@media (max-width: 599px) {
+@media (min-width: 360px) and (max-width: 599px) {
+  .carousel-cell {
+    width: 100%;
+    margin: 0 50px;
+    background: #f1f3ff;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+
   .flickity-prev-next-button {
     margin-top: 330px;
     border: 1px solid;
@@ -142,9 +162,13 @@
     margin-right: 35%;
     margin-left: 35%;
   }
+
+  .car-img-section {
+    width: 100%;
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1440px) {
   .car-img-section {
     position: absolute;
     bottom: 0;
@@ -153,11 +177,11 @@
   }
 
   .jumbotron {
-    min-height: 700px;
+    min-height: 520px;
   }
 
   .main-content {
-    margin-top: 200px;
+    margin-top: 160px;
   }
 
   .carousel-cell {
