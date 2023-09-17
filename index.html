@@ -1,0 +1,651 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binar Car Rental</title>
+    <link rel="icon" href="https://i.ibb.co/GWKFdG1/car-reverse.png" />
+    
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Flickity -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="d-flex flex-column custom-cointainer">
+      <header id="jumbotron" class="jumbotron position-relative">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg fixed-top py-4">
+          <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+              <img src="https://i.ibb.co/9VQBy1p/logo.png" alt="logo-icon" />
+            </a>
+            <button
+              class="navbar-toggler mt-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header pt-5">
+                <h5
+                  class="offcanvas-title fw-bold ms-4 fs-3"
+                  id="offcanvasNavbarLabel"
+                >
+                  <a
+                    href="index.html"
+                    class="link-underline link-underline-opacity-0 text-dark"
+                  >
+                    <img
+                      src="https://i.ibb.co/9VQBy1p/logo.png"
+                      alt="logo-icon"
+                  /></a>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body mt-2">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                  <li class="nav-item ms-4 mb-lg-0">
+                    <a class="nav-link" aria-current="page" href="#our-services"
+                      >Our Services</a
+                    >
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <a class="nav-link" href="#why-us">Why Us</a>
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <button
+                      type="button"
+                      class="btn btn-success px-4 fw-semibold"
+                    >
+                      <a
+                        href="#start"
+                        class="link-underline link-underline-opacity-0 text-white"
+                        >Register</a
+                      >
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Section -->
+        <section
+          class="container d-flex flex-lg-row flex-column align-items-center justify-content-around main-content"
+        >
+          <figcaption class="me-auto mt-5 col-lg-6 mb-1">
+            <h1 class="mb-4 lh-base fw-semibold">
+              Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)
+            </h1>
+            <p class="mb-3 col-lg-10">
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+            <button class="mb-4 btn btn-success px-4 fw-semibold">
+              <a
+                href="#start"
+                class="link-underline link-underline-opacity-0 text-white"
+                >Mulai Sewa Mobil</a
+              >
+            </button>
+          </figcaption>
+          <img
+            src="https://i.ibb.co/HKtqhdt/car.png"
+            alt="car-image"
+            class="car-img-section"
+          />
+        </section>
+      </header>
+
+      <main class="flex-grow-1">
+
+        <!-- Our Services Section -->
+        <section id="our-services" class="container pt-lg-5">
+          <figure class="d-lg-flex mt-5 text-center ms-lg-5 align-items-center">
+            <img
+              src="https://i.ibb.co/q5bz5SC/our-services.png"
+              alt="our-services-image"
+              class="col-8 col-lg-5 col-md-8 col-sm-10 me-lg-0 me-5"
+            />
+            <figcaption class="ms-lg-5 col-lg-6 text-start mt-lg-0 mt-5">
+              <h3 class="ms-lg-5 mb-3 mb-lg-4 fw-semibold">
+                Best Car Rental for any kind of trip in (Lokasimu)!
+              </h3>
+              <p class="mb-3 ms-lg-5">
+                Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
+                lebih murah dibandingkan yang lain, kondisi mobil baru, serta
+                kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
+                wedding, meeting, dll.
+              </p>
+              <ul class="custom-list-style-image ms-lg-3">
+                <li class="mb-3">Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+                <li class="mb-3">Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+                <li class="mb-3">Sewa Mobil Jangka Panjang Bulanan</li>
+                <li class="mb-3">Gratis Antar - Jemput Mobil di Bandara</li>
+                <li class="mb-3">Layanan Airport Transfer / Drop In Out</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- Why Us Section-->
+        <section id="why-us" class="container mt-5 pt-5">
+          <h3 class="fw-semibold text-center text-lg-start">Why Us?</h3>
+          <p class="text-center text-lg-start">
+            Mengapa harus pilih Binar Car Rental?
+          </p>
+          <div class="row row-cols-1 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    src="https://i.ibb.co/XXKHW6G/like.png"
+                    alt="like-icon"
+                    class="mb-4"
+                  />
+                  <h6 class="card-title fw-semibold mb-3">Mobil Lengkap</h6>
+                  <p class="card-text">
+                    Tersedia banyak pilihan mobil, kondisi masih baru, bersih
+                    dan terawat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    src="https://i.ibb.co/Kwv0T34/price.png"
+                    alt="price-icon"
+                    class="mb-4"
+                  />
+                  <h6 class="card-title fw-semibold mb-3">Harga Murah</h6>
+                  <p class="card-text">
+                    Harga murah dan bersaing, bisa bandingkan harga kami dengan
+                    rental mobil lain.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    src="https://i.ibb.co/2MX9BvH/time.png"
+                    alt="time-icon"
+                    class="mb-4"
+                  />
+                  <h6 class="card-title fw-semibold mb-3">Layanan 24 Jam</h6>
+                  <p class="card-text">
+                    Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami
+                    juga tersedia di akhir minggu.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img
+                    src="https://i.ibb.co/QbbZbyc/achieve.png"
+                    alt="achieve-icon"
+                    class="mb-4"
+                  />
+                  <h6 class="card-title fw-semibold mb-3">Sopir Profesional</h6>
+                  <p class="card-text">
+                    Sopir yang profesional, berpengalaman, jujur, ramah dan
+                    selalu tepat waktu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonial" class="container-fluid mt-5 pt-5">
+          <h3 class="fw-semibold text-center">Testimonial</h3>
+          <p class="text-center">
+            Berbagai review positif dari para pelanggan kami
+          </p>
+          <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell d-flex align-items-center">
+              <div class="card border-0" style="background-color: #f1f3ff">
+                <div
+                  class="card-body row flex-xxl-row flex-column justify-content-center align-items-center text-xxl-start text-center p-xl-5 py-lg-5 px-lg-0 py-4 px-5"
+                >
+                  <figure class="col-xxl-3 col-8 mb-4">
+                    <img
+                      src="https://i.ibb.co/92fDbc3/photo-1.png"
+                      alt="photo-1"
+                      style="width: 130px"
+                    />
+                  </figure>
+
+                  <figcaption class="fs-6 col-xxl-9 col-12 px-xl-0 px-lg-5">
+                    <img
+                      src="https://i.ibb.co/n0hqL9c/five-star.png"
+                      alt="five-star-icon"
+                      class="mb-3"
+                      style="width: 120px"
+                    />
+                    <blockquote style="font-size: 16px">
+                      &quot;Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Qui temporibus tempore possimus ut, earum repellat
+                      alias itaque nemo incidunt perferendis consequuntur
+                      aspernatur natus, amet dolorum voluptate minima
+                      perspiciatis inventore quisquam.&quot;
+                    </blockquote>
+                    <h6 class="fw-semibold fs-5">John Dee 32, Bromo</h6>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell d-flex align-items-center">
+              <div class="card border-0" style="background-color: #f1f3ff">
+                <div
+                  class="card-body row flex-xxl-row flex-column justify-content-center align-items-center text-xxl-start text-center p-xl-5 py-lg-5 px-lg-0 py-4 px-5"
+                >
+                  <figure class="col-xxl-3 col-8 mb-4">
+                    <img
+                      src="https://i.ibb.co/T20NcnH/photo-2.png"
+                      alt="photo-2"
+                      style="width: 130px"
+                    />
+                  </figure>
+
+                  <figcaption class="fs-6 col-xxl-9 col-12 px-xl-0 px-lg-5">
+                    <img
+                      src="https://i.ibb.co/n0hqL9c/five-star.png"
+                      alt="five-star-icon"
+                      class="mb-3"
+                      style="width: 120px"
+                    />
+                    <blockquote style="font-size: 16px">
+                      &quot;Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Qui temporibus tempore possimus ut, earum repellat
+                      alias itaque nemo incidunt perferendis consequuntur
+                      aspernatur natus, amet dolorum voluptate minima
+                      perspiciatis inventore quisquam.&quot;
+                    </blockquote>
+                    <h6 class="fw-semibold fs-5">Aimy Roshan 30, Breadest</h6>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell d-flex align-items-center">
+              <div class="card border-0" style="background-color: #f1f3ff">
+                <div
+                  class="card-body row flex-xxl-row flex-column justify-content-center align-items-center text-xxl-start text-center p-xl-5 py-lg-5 px-lg-0 py-4 px-5"
+                >
+                  <figure class="col-xxl-3 col-8 mb-4">
+                    <img
+                      src="https://i.ibb.co/thFtYRx/aiony-haust.png"
+                      alt="photo-4"
+                      style="width: 130px"
+                    />
+                  </figure>
+
+                  <figcaption class="fs-6 col-xxl-9 col-12 px-xl-0 px-lg-5">
+                    <img
+                      src="https://i.ibb.co/n0hqL9c/five-star.png"
+                      alt="five-star-icon"
+                      class="mb-3"
+                      style="width: 120px"
+                    />
+                    <blockquote style="font-size: 16px">
+                      &quot;Lorem ipsum dolor, sit amet consectetur adipisicing
+                      elit. Modi voluptatem quos error nemo eum, rem voluptatum
+                      animi at tempore possimus totam dolor placeat ab
+                      perspiciatis, obcaecati laborum, a laboriosam nostrum unde
+                      cumque sit dicta rerum. Nisi culpa ea.&quot;
+                    </blockquote>
+                    <h6 class="fw-semibold fs-5">Aiony Haust 29, Kygre</h6>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell d-flex align-items-center">
+              <div class="card border-0" style="background-color: #f1f3ff">
+                <div
+                  class="card-body row flex-xxl-row flex-column justify-content-center align-items-center text-xxl-start text-center p-xl-5 py-lg-5 px-lg-0 py-4 px-5"
+                >
+                  <figure class="col-xxl-3 col-8 mb-4">
+                    <img
+                      src="https://i.ibb.co/T10MLQn/toa-heftiba.png"
+                      alt="photo-4"
+                      style="width: 130px"
+                    />
+                  </figure>
+
+                  <figcaption class="fs-6 col-xxl-9 col-12 px-xl-0 px-lg-5">
+                    <img
+                      src="https://i.ibb.co/n0hqL9c/five-star.png"
+                      alt="five-star-icon"
+                      class="mb-3"
+                      style="width: 120px"
+                    />
+                    <blockquote style="font-size: 16px">
+                      &quot;Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Exercitationem optio quis voluptatibus hic aliquam
+                      ea neque et repudiandae unde atque! Illo labore nostrum et
+                      libero iste tempore accusamus? Cupiditate facilis possimus
+                      facere! Voluptates.&quot;
+                    </blockquote>
+                    <h6 class="fw-semibold fs-5">Toa Heftiba 28, Greek</h6>
+                  </figcaption>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Another Section -->
+        <section id="start" class="mx-2">
+          <div
+            class="container bg-primary rounded-3 text-white text-center"
+            style="margin-top: 120px; padding: 75px 0"
+          >
+            <h2 class="mb-4">Sewa Mobil di (Lokasimu) Sekarang</h2>
+            <p style="font-size: 12px; width: 400px" class="mb-5 mx-auto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="btn btn-success rounded-1">Mulai Sewa Mobil</button>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <div id="faq" class="container">
+          <section class="row" style="margin-top: 120px">
+            <div class="col-lg-6 col-12">
+              <h3 class="fw-bolder">Frequently Asked Question</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="accordion mb-4" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne1"
+                    >
+                      Apa saja syarat yang dibutuhkan?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, obcaecati!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion mb-4" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne2"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne2"
+                    >
+                      Berapa hari minimal sewa mobil lepas kunci?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nesciunt commodi veritatis voluptas illum aspernatur natus
+                      deserunt, temporibus tempore tenetur esse.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion mb-4" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne3"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne3"
+                    >
+                      Berapa hari sebelumnya sabaiknya booking sewa mobil?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eaque sit architecto temporibus fugiat cupiditate nam
+                      similique, debitis eligendi rerum, explicabo porro
+                      corrupti, modi veniam quasi aliquid odit facilis
+                      exercitationem magni.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion mb-4" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne4"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne4"
+                    >
+                      Apakah Ada biaya antar-jemput?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ut ipsum quod sequi ex, nihil natus ullam maiores itaque
+                      sunt laudantium vel, alias optio cum. Excepturi, dolores
+                      numquam nostrum explicabo culpa iusto rerum! Veniam quia
+                      vel exercitationem? Consequatur fuga quis aspernatur.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion mb-4" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne5"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne5"
+                    >
+                      Bagaimana jika terjadi kecelakaan?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Commodi, quaerat, saepe fugit velit illo placeat
+                      temporibus aut animi incidunt sit reiciendis, repellendus
+                      perferendis praesentium unde amet suscipit. Dolor
+                      blanditiis assumenda, doloribus quam atque iusto rem hic
+                      vero? Possimus corrupti esse magni quia nesciunt eaque
+                      blanditiis quos! Expedita veritatis dolores ut?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Footer Section -->
+      <footer class="container mt-5 pt-5 mt-5">
+        <div class="row">
+          <div class="col-lg-5 mb-3">
+            <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p>binarcarrental@gmail.com</p>
+            <p>081-233-334-808</p>
+          </div>
+          <div class="col-lg-2 mb-3">
+            <p>
+              <a
+                href="#our-services"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >Our Services</a
+              >
+            </p>
+            <p>
+              <a
+                href="#why-us"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >Why Us</a
+              >
+            </p>
+            <p>
+              <a
+                href="#testimonial"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >Testimonial</a
+              >
+            </p>
+            <p>
+              <a
+                href="#faq"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >FAQ</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <p>Connect with us</p>
+            <a href="#">
+              <img
+                src="https://i.ibb.co/7pRTR0Q/icon-facebook.png"
+                alt="icon-facebook"
+                title="Facebook"
+            /></a>
+            <a href="#">
+              <img
+                src="https://i.ibb.co/TWwV8FP/icon-instagram.png"
+                alt="icon-instagram"
+                class="ms-2"
+                title="Instagram"
+            /></a>
+            <a href="#">
+              <img
+                src="https://i.ibb.co/Tw7K3y0/icon-twitter.png"
+                alt="icon-twitter"
+                class="ms-2"
+                title="Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://i.ibb.co/7jhPCjf/icon-mail.png"
+                alt="icon-mail"
+                class="ms-2"
+                title="Mail"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://i.ibb.co/KL840SF/icon-twitch.png"
+                alt="icon-twitch"
+                class="ms-2"
+                title="Twitch"
+            /></a>
+          </div>
+          <div class="col-lg-2 mb-3">
+            <p>Copyright Binar 2023</p>
+            <p>
+              <a
+                href="#jumbotron"
+                class="link-underline-opacity-0 link-underline text-dark fw-bold fs-4"
+              >
+                <img src="https://i.ibb.co/9VQBy1p/logo.png" alt="logo-icon"
+              /></a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- My Script -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
