@@ -63,7 +63,7 @@
 }
 
 .carousel-cell {
-  width: 50%;
+  width: 60%;
   margin: 0 20px;
 }
 
@@ -76,7 +76,11 @@
 }
 
 .flickity-prev-next-button {
-  border: 5px solid;
+  margin-top: 240px;
+  border: 1px solid;
+  transition: 0.3s;
+  margin-right: 45%;
+  margin-left: 45%;
 }
 
 .flickity-prev-next-button:hover {
@@ -92,7 +96,19 @@
   margin-top: 200px;
 }
 
-@media (min-width: 1440px) {
+.carousel .carousel-cell figure img {
+  width: 130px;
+}
+
+.carousel .carousel-cell figcaption img {
+  width: 120px;
+}
+
+.carousel .carousel-cell figcaption blockquote {
+  font-size: 16px;
+}
+
+@media (min-width: 1400px) and (max-width: 1440px) {
   .flickity-prev-next-button {
     margin-top: 230px;
     border: 1px solid;
@@ -102,29 +118,51 @@
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1440px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .flickity-prev-next-button {
-    margin-top: 250px;
+    margin-top: 220px;
     border: 1px solid;
     transition: 0.3s;
-    margin-right: 44%;
-    margin-left: 44%;
+    margin-right: 45%;
+    margin-left: 45%;
+  }
+
+  .carousel-cell {
+    width: 50%;
+    margin: 0 15px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1399px) {
-  .flickity-prev-next-button {
-    margin-top: 300px;
-    border: 1px solid;
-    transition: 0.3s;
-    margin-right: 44%;
-    margin-left: 44%;
-  }
-}
-
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .flickity-prev-next-button {
     margin-top: 280px;
+    border: 1px solid;
+    margin-right: 44%;
+    margin-left: 44%;
+  }
+
+  .carousel-cell {
+    width: 50%;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .flickity-prev-next-button {
+    margin-top: 290px;
+    margin-right: 43%;
+    margin-left: 43%;
+  }
+
+  .carousel-cell {
+    width: 50%;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 913px) {
+  .flickity-prev-next-button {
+    margin-top: 290px;
     border: 1px solid;
     transition: 0.3s;
     margin-right: 42%;
@@ -133,12 +171,42 @@
 }
 
 @media (max-width: 799px) {
+  #testimonial > h3 {
+    font-size: 1.4em;
+  }
+
+  #testimonial > p {
+    font-size: 0.9em;
+  }
+
+  .carousel-cell {
+    width: 60%;
+  }
+
+  .carousel .carousel-cell figure img {
+    width: 100px !important;
+  }
+
+  .carousel .carousel-cell figcaption img {
+    width: 90px !important;
+  }
+
+  .carousel .carousel-cell figcaption blockquote {
+    font-size: 14px !important;
+  }
+
+  .carousel .carousel-cell figcaption h6 {
+    font-size: 15px !important;
+  }
+
   .flickity-prev-next-button {
-    margin-top: 290px;
+    margin-top: 240px;
     border: 1px solid;
     transition: 0.3s;
-    margin-right: 38%;
-    margin-left: 38%;
+    margin-right: 41.5%;
+    margin-left: 41.5%;
+    width: 35px;
+    height: 35px;
   }
 
   .jumbotron {
@@ -146,9 +214,9 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 599px) {
+@media (max-width: 650px) {
   .carousel-cell {
-    width: 100%;
+    width: 510px;
     margin: 0 50px;
     background: #f1f3ff;
     border-radius: 5px;
@@ -156,11 +224,11 @@
   }
 
   .flickity-prev-next-button {
-    margin-top: 330px;
+    margin-top: 230px;
     border: 1px solid;
     transition: 0.3s;
-    margin-right: 35%;
-    margin-left: 35%;
+    margin-right: 40%;
+    margin-left: 40%;
   }
 
   .car-img-section {
@@ -168,7 +236,35 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1440px) {
+@media (max-width: 575px) {
+  .carousel-cell {
+    width: 100%;
+  }
+
+  .flickity-prev-next-button {
+    margin-top: 220px;
+    margin-right: 38.5%;
+    margin-left: 38.5%;
+  }
+}
+
+@media (max-width: 435px) {
+  .flickity-prev-next-button {
+    margin-top: 230px;
+    margin-right: 35%;
+    margin-left: 35%;
+  }
+}
+
+@media (max-width: 360px) {
+  .flickity-prev-next-button {
+    margin-top: 240px;
+    margin-right: 32%;
+    margin-left: 32%;
+  }
+}
+
+/* @media (min-width: 992px) and (max-width: 1440px) {
   .car-img-section {
     position: absolute;
     bottom: 0;
@@ -184,15 +280,14 @@
     margin-top: 160px;
   }
 
-  .carousel-cell {
-    width: 50%;
+  /* .carousel-cell {
+    width: 100%;
     margin: 0 50px;
     background: #f1f3ff;
     border-radius: 5px;
     counter-increment: carousel-cell;
-  }
-
+  } */
+/* 
   #start {
     margin-top: 200px;
-  }
-}
+  } */
