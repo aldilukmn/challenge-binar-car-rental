@@ -108,6 +108,14 @@
   font-size: 16px;
 }
 
+.fs-h2-another-section {
+  font-size: 36px;
+}
+
+.another-section {
+  margin-bottom: 75px;
+}
+
 @media (min-width: 1400px) and (max-width: 1440px) {
   .flickity-prev-next-button {
     margin-top: 230px;
@@ -131,6 +139,22 @@
     width: 50%;
     margin: 0 15px;
   }
+
+  .main-content figcaption h1 {
+    font-size: 2em;
+  }
+
+  .car-img-section {
+    width: 53%;
+  }
+
+  .jumbotron {
+    height: 530px;
+  }
+
+  .main-content {
+    margin-top: 150px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -145,11 +169,23 @@
     width: 50%;
     margin: 0 15px;
   }
+
+  .car-img-section {
+    width: 95%;
+  }
+
+  .jumbotron {
+    height: 1050px;
+  }
+
+  .main-content {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 1050px) {
   .flickity-prev-next-button {
-    margin-top: 290px;
+    margin-top: 270px;
     margin-right: 43%;
     margin-left: 43%;
   }
@@ -157,6 +193,20 @@
   .carousel-cell {
     width: 50%;
     margin: 0 15px;
+  }
+
+  .jumbotron {
+    height: 940px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fs-h2-another-section {
+    font-size: 24px;
+  }
+
+  .another-section {
+    margin: 150px 0 75px 0 !important;
   }
 }
 
@@ -167,6 +217,10 @@
     transition: 0.3s;
     margin-right: 42%;
     margin-left: 42%;
+  }
+
+  .jumbotron {
+    height: 870px;
   }
 }
 
@@ -210,7 +264,21 @@
   }
 
   .jumbotron {
-    min-height: 900px;
+    height: 880px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-img-section {
+    width: 85%;
+  }
+
+  .jumbotron {
+    height: 750px;
+  }
+
+  .main-content {
+    margin-top: 80px;
   }
 }
 
@@ -232,7 +300,11 @@
   }
 
   .car-img-section {
-    width: 100%;
+    width: 90%;
+  }
+
+  .jumbotron {
+    height: 700px;
   }
 }
 
@@ -246,6 +318,14 @@
     margin-right: 38.5%;
     margin-left: 38.5%;
   }
+
+  .car-img-section {
+    width: 98%;
+  }
+
+  .jumbotron {
+    height: 680px;
+  }
 }
 
 @media (max-width: 435px) {
@@ -254,6 +334,11 @@
     margin-right: 35%;
     margin-left: 35%;
   }
+
+  .jumbotron {
+    height: 680px;
+  }
+  
 }
 
 @media (max-width: 360px) {
@@ -262,32 +347,8 @@
     margin-right: 32%;
     margin-left: 32%;
   }
-}
-
-/* @media (min-width: 992px) and (max-width: 1440px) {
-  .car-img-section {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-  }
 
   .jumbotron {
-    min-height: 520px;
+    height: 650px;
   }
-
-  .main-content {
-    margin-top: 160px;
-  }
-
-  /* .carousel-cell {
-    width: 100%;
-    margin: 0 50px;
-    background: #f1f3ff;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-  } */
-/* 
-  #start {
-    margin-top: 200px;
-  } */
+}
