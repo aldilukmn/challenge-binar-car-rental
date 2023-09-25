@@ -116,6 +116,21 @@
   margin-bottom: 75px;
 }
 
+#our-services,
+.why-us-title,
+#why-us .row .col {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: .7s;
+}
+
+#our-services.op-100,
+.why-us-title.op-100,
+#why-us .row .col.op-100 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 1400px) and (max-width: 1440px) {
   .flickity-prev-next-button {
     margin-top: 230px;
