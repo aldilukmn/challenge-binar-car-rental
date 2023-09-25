@@ -77,14 +77,14 @@
 
 .flickity-prev-next-button {
   margin-top: 240px;
-  border: 1px solid;
+  border: 1px solid !important;
   transition: 0.3s;
   margin-right: 45%;
   margin-left: 45%;
 }
 
 .flickity-prev-next-button:hover {
-  background: #5cb85f;
+  background: #5cb85f !important;
   border: 1px transparent;
 }
 
@@ -206,7 +206,8 @@
   }
 
   .another-section {
-    margin: 150px 0 75px 0 !important;
+    margin-top: 150px !important;
+    margin-bottom: 75px !important;
   }
 }
 
@@ -349,6 +350,6 @@
   }
 
   .jumbotron {
-    height: 650px;
+    height: 700px;
   }
 }
