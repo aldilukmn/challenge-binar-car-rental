@@ -118,17 +118,45 @@
 
 #our-services,
 .why-us-title,
-#why-us .row .col {
+#why-us .row .col,
+.testimonial-title,
+.carousel,
+.another-section {
   opacity: 0;
   transform: translateY(-50px);
   transition: .7s;
 }
 
+#faq .faq-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: .7s;
+}
+
+#faq .faq-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: .7s;
+}
+
+footer.container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .7s; 
+  margin-top: 100px;
+}
+
 #our-services.op-100,
 .why-us-title.op-100,
-#why-us .row .col.op-100 {
+#why-us .row .col.op-100,
+.testimonial-title.op-100,
+.carousel.op-100,
+.another-section.op-100,
+#faq .faq-left.op-100,
+#faq .faq-right.op-100,
+footer.container.op-100 {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(0, 0);
 }
 
 @media (min-width: 1400px) and (max-width: 1440px) {
