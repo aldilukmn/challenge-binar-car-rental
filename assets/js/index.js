@@ -1,3 +1,12 @@
+// Page loader
+window.addEventListener('load', function() {
+  const load_spinner_wrapper = document.querySelector('.load-spinner-wrapper');
+  load_spinner_wrapper.classList.add('load-spinner-hidden');
+  load_spinner_wrapper.addEventListener('transitionend', function() {
+    document.body.removeChild(load_spinner_wrapper);
+  });
+});
+
 // Navbar scrolling section
 const navbar = document.getElementsByTagName('nav')[0];
 
@@ -101,11 +110,11 @@ window.addEventListener('scroll', function() {
  if (1200 > window.innerWidth) {
   if (ver_scroll > another_section_offsetTop - 900) {
     another_section.classList.add('op-100');
-  } else {
-    if (ver_scroll > another_section_offsetTop - 450) {
-      another_section.classList.add('op-100');
   }
- }
+ } else {
+  if (ver_scroll > another_section_offsetTop - 450) {
+    another_section.classList.add('op-100');
+}
 }
 
   // FAQ section
