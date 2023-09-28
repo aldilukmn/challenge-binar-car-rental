@@ -127,6 +127,10 @@
   transition: .7s;
 }
 
+#faq {
+  overflow: hidden;
+}
+
 #faq .faq-left {
   opacity: 0;
   transform: translateX(-50px);
@@ -333,11 +337,11 @@ footer.container.op-100 {
 
 @media (max-width: 768px) {
   .car-img-section {
-    width: 85%;
+    width: 95%;
   }
 
   .jumbotron {
-    height: 750px;
+    height: 820px;
   }
 
   .main-content {
