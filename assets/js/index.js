@@ -2,9 +2,13 @@
 window.addEventListener('load', function() {
   const load_spinner_wrapper = document.querySelector('.load-spinner-wrapper');
   load_spinner_wrapper.classList.add('load-spinner-hidden');
-  load_spinner_wrapper.addEventListener('transitionend', function() {
+
+  function removeSpinner() {
     document.body.removeChild(load_spinner_wrapper);
-  });
+    load_spinner_wrapper.removeEventListener('transitionend', removeSpinner);
+  }
+
+  load_spinner_wrapper.addEventListener('transitionend', removeSpinner);
 });
 
 // Navbar scrolling section
@@ -17,7 +21,6 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('bg-white', 'shadow-sm');
   }
 });
-
 
 // Parallax section
 window.addEventListener('scroll', function() {
