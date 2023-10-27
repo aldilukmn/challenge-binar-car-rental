@@ -1,0 +1,322 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binar Car Rental</title>
+    <link rel="icon" href="https://i.ibb.co/GWKFdG1/car-reverse.png" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/4e33de287f.js"
+      crossorigin="anonymous"
+    ></script>
+
+      <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Flickity -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="load-spinner-wrapper">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <div class="d-flex flex-column custom-container">
+      <header id="jumbotron" class="jumbotron position-relative">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg fixed-top py-4">
+          <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="/">
+              <img src="https://i.ibb.co/9VQBy1p/logo.png" alt="logo-icon" />
+            </a>
+            <button
+              class="navbar-toggler mt-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end w-50"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header pt-5">
+                <h5
+                  class="offcanvas-title fw-bold ms-4 fs-3"
+                  id="offcanvasNavbarLabel"
+                >
+                  <a
+                    href="index.html"
+                    class="link-underline link-underline-opacity-0 text-dark"
+                  >
+                    <img
+                      src="https://i.ibb.co/9VQBy1p/logo.png"
+                      alt="logo-icon"
+                  /></a>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body mt-2">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                  <li class="nav-item ms-4 mb-lg-0">
+                    <a class="nav-link" aria-current="page" href="#our-services"
+                      >Our Services</a
+                    >
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <a class="nav-link" href="#why-us">Why Us</a>
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <a class="nav-link" href="#testimonial">Testimonial</a>
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav-item ms-4 mb-lg-0 mb-md-2">
+                    <button
+                      type="button"
+                      class="btn btn-success px-4 fw-semibold"
+                    >
+                      <a
+                        href="#start"
+                        class="link-underline link-underline-opacity-0 text-white"
+                        >Register</a
+                      >
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Section -->
+        <section
+          class="container d-flex flex-xl-row flex-column align-items-center main-content"
+        >
+          <figcaption
+            class="me-auto mt-5 col-xl-6 mb-1 figcaption-main-section"
+          >
+            <h1 class="mb-4 lh-base fw-semibold">
+              Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)
+            </h1>
+            <p class="mb-3 col-xl-10">
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+            <a href="/cars" class="mb-4 btn btn-success px-4 fw-semibold"
+              >Mulai Sewa Mobil</a
+            >
+          </figcaption>
+          <img
+            src="https://i.ibb.co/HKtqhdt/car.png"
+            alt="car-image"
+            class="car-img-section img-main-section"
+          />
+        </section>
+      </header>
+
+      <section id="search-card" class="container another-section op-100">
+        <form action="/cars" class="card border-0 shadow-sm">
+          <div
+            class="card-body d-flex flex-row align-items-center justify-content-evenly rounded-3"
+            style="height: 100px"
+          >
+            <div class="col-2">
+              <h6 class="fs-7">Tipe Driver</h6>
+              <select
+                id="select-driver"
+                class="form-select form-select-sm fs-7"
+              >
+                <option selected value="">Pilih Tipe Driver</option>
+                <option value="Dengan Sopir">Dengan Sopir</option>
+                <option value="Tanpa Sopir (Lepas Kunci)">
+                  Tanpa Sopir (Lepas Kunci)
+                </option>
+              </select>
+            </div>
+            <div class="col-2">
+                <h6 class="fs-7">Tanggal</h6>
+                <input type="date" name="date" class="form-control fs-7" placeholder="Pilih Tanggal">
+            </div>
+            <div class="col-2">
+              <h6 class="fs-7">Waktu Jemput/Ambil</h6>
+              <select id="select-time" class="form-select form-select-sm fs-7">
+                <option selected value="">Pilih Waktu</option>
+                <option value="8">08.00 WIB</option>
+                <option value="9">09.00 WIB</option>
+                <option value="10">10.00 WIB</option>
+                <option value="11">11.00 WIB</option>
+                <option value="12.00">12.00 WIB</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <h6 class="fs-7">Jumlah Penumpang (Optional)</h6>
+              <select
+                id="select-passenger"
+                class="form-select form-select-sm fs-7"
+              >
+                <option selected value="">Jumlah Penumpang</option>
+                <option value="2">2 Orang</option>
+                <option value="4">4 Orang</option>
+                <option value="6">6 Orang</option>
+              </select>
+            </div>
+            <div>
+              <button
+                id="search-btn"
+                class="btn btn-success"
+                type="button"
+                disabled
+              >
+                Cari Mobil
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <main class="flex-grow-1 container">
+        <div class="row">
+          <h5 class="text-center">Silakan Pilih Mobil Favoritmu 😊</h5>
+        </div>
+      </main>
+    
+      <!-- Footer Section -->
+      <footer class="container op-100">
+        <div class="row">
+          <div class="col-lg-5 mb-3">
+            <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p>binarcarrental@gmail.com</p>
+            <p>081-233-334-808</p>
+          </div>
+          <div class="col-lg-2 mb-3">
+            <p>
+              <a
+                href="#our-services"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >Our Services</a
+              >
+            </p>
+            <p>
+              <a
+                href="#why-us"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >Why Us</a
+              >
+            </p>
+            <p>
+              <a
+                href="#testimonial"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >Testimonial</a
+              >
+            </p>
+            <p>
+              <a
+                href="#faq"
+                class="link-underline link-underline-opacity-0 text-dark"
+                >FAQ</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <p>Connect with us</p>
+            <a href="#">
+              <img
+                src="https://i.ibb.co/7pRTR0Q/icon-facebook.png"
+                alt="icon-facebook"
+                title="Facebook"
+            /></a>
+            <a href="#">
+              <img
+                src="https://i.ibb.co/TWwV8FP/icon-instagram.png"
+                alt="icon-instagram"
+                class="ms-2"
+                title="Instagram"
+            /></a>
+            <a href="#">
+              <img
+                src="https://i.ibb.co/Tw7K3y0/icon-twitter.png"
+                alt="icon-twitter"
+                class="ms-2"
+                title="Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://i.ibb.co/7jhPCjf/icon-mail.png"
+                alt="icon-mail"
+                class="ms-2"
+                title="Mail"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://i.ibb.co/KL840SF/icon-twitch.png"
+                alt="icon-twitch"
+                class="ms-2"
+                title="Twitch"
+            /></a>
+          </div>
+          <div class="col-lg-2 mb-3">
+            <p>Copyright Binar 2023</p>
+            <p>
+              <a
+                href="#jumbotron"
+                class="link-underline-opacity-0 link-underline text-dark fw-bold fs-4"
+              >
+                <img src="https://i.ibb.co/9VQBy1p/logo.png" alt="logo-icon"
+              /></a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- My Script -->
+    <script src="./js/scripts/style.js"></script>
+
+    <!-- Get Car Data -->
+    <!-- <script src="./js/App.js"></script>
+    <script src="./js/Car.ex.js"></script>
+    <script src="./js/Main.js"></script> -->
+    <!-- <script src="./js/Component.js"></script> -->
+
+    <script type="text/javascript" src="./js/scripts/binar.js"></script>
+    <script type="text/javascript" src="./js/scripts/app.example.js"></script>
+    <script type="text/javascript" src="./js/scripts/car.example.js"></script>
+    <script type="text/javascript" src="./js/scripts/main.example.js"></script>
+</html>
