@@ -42,17 +42,18 @@ class Car {
     this.availableAt = availableAt;
   }
 
-  createListItem(iconClass, text) {
+  createListItem(img, text) {
     const li = document.createElement("li");
-    const i = document.createElement("i");
     const p = document.createElement("p");
+    const image = document.createElement("img");
+    image.src = img;
 
     li.classList.add("mb-2");
-    i.classList.add("fa-solid", iconClass, "me-2");
+    image.classList.add("me-2");
     p.classList.add("d-inline");
     p.innerText = text;
 
-    li.append(i, p);
+    li.append(image, p);
 
     return li;
   }
@@ -77,19 +78,19 @@ class Car {
 
     img.classList.add("card-img-top");
     img.src = this.image;
-    h5.innerText = this.model;
+    h5.innerText = this.model + " / " + this.type;
     h6.innerText = "Rp " + this.rentPerDay.toLocaleString("id-ID") + " / hari";
     h6.classList.add("fw-semibold");
     p.innerText = this.description ? this.description : "Tidak ada deskripsi.";
     p.classList.add("my-4");
     ul.classList.add("list-item-none", "px-0");
     a.innerText = "Pilih Mobil";
-    a.classList.add("btn", "btn-success", "w-92", "mx-auto");
+    a.classList.add("btn", "btn-success", "w-92", "mx-auto", "rounded-1", "py-2");
 
-    const li1 = this.createListItem("fa-user-group", this.capacity + " orang");
-    const li2 = this.createListItem("fa-gear", this.transmission);
+    const li1 = this.createListItem("./images/fi_users_icon.png" ,this.capacity + " orang");
+    const li2 = this.createListItem("./images/fi_settings.png", this.transmission);
     const li3 = this.createListItem(
-      "fa-calendar-days",
+      "./images/fi_calendar_icon.png",
       "Tahun " + this.year 
     );
 

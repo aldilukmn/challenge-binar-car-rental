@@ -14,6 +14,7 @@ class App {
     const getMonth = selectedDate.getMonth() + 1;
     const getDate = selectedDate.getDate();
     const getHour = parseInt(this.getTime.value);
+    const getPassanger = parseInt(this.getPassenger.value);
 
     const noItem = document.getElementsByClassName("text-center")[0];
     if (noItem) {
@@ -64,7 +65,7 @@ class App {
     await this.load();
 
     this.form.onchange = () => {
-      if (this.getDriver.value !== '' && this.getDate.value !== '' && this.getTime.value !== '' && this.getPassenger.value !== '') {
+      if (this.getDriver.value !== '' && this.getDate.value !== '' && this.getTime.value !== '') {
         this.btnDate.removeAttribute("disabled");
         this.btnDate.onclick = this.filter;
       } else {

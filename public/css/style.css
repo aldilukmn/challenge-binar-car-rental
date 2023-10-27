@@ -207,6 +207,33 @@ footer.container.op-100 {
   width: 92%;
 }
 
+#select-driver,
+input[type="date"] {
+  width: 230px;
+  padding: 8px;
+}
+
+
+#select-time {
+  background-image: url(../images/fi_clock.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  width: 230px;
+  padding: 8px;
+}
+
+#select-passenger {
+  background-image: url(../images/fi_users.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  width: 230px;
+  padding: 8px;
+}
+
+#search-btn {
+  margin-top: 23px;
+}
+
 @media (min-width: 1400px) and (max-width: 1440px) {
   .flickity-prev-next-button {
     margin-top: 230px;

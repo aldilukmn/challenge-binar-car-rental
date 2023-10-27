@@ -141,16 +141,16 @@
       </header>
 
       <section id="search-card" class="container another-section op-100">
-        <form action="/cars" class="card border-0 shadow-sm">
+        <form action="/cars" class="card border-0 shadow-sm text-secondary">
           <div
-            class="card-body d-flex flex-row align-items-center justify-content-evenly rounded-3"
+            class="card-body d-flex flex-row align-items-center justify-content-between rounded-3"
             style="height: 100px"
           >
             <div class="col-2">
               <h6 class="fs-7">Tipe Driver</h6>
               <select
                 id="select-driver"
-                class="form-select form-select-sm fs-7"
+                class="form-select form-select-sm fs-7 rounded-1 text-secondary"
               >
                 <option selected value="">Pilih Tipe Driver</option>
                 <option value="Dengan Sopir">Dengan Sopir</option>
@@ -161,11 +161,11 @@
             </div>
             <div class="col-2">
                 <h6 class="fs-7">Tanggal</h6>
-                <input type="date" name="date" class="form-control fs-7" placeholder="Pilih Tanggal">
+                <input type="date" name="date" class="form-control fs-7 rounded-1 text-secondary" placeholder="Pilih Tanggal">
             </div>
             <div class="col-2">
               <h6 class="fs-7">Waktu Jemput/Ambil</h6>
-              <select id="select-time" class="form-select form-select-sm fs-7">
+              <select id="select-time" class="form-select form-select-sm fs-7 rounded-1 text-secondary">
                 <option selected value="">Pilih Waktu</option>
                 <option value="8">08.00 WIB</option>
                 <option value="9">09.00 WIB</option>
@@ -178,7 +178,7 @@
               <h6 class="fs-7">Jumlah Penumpang (Optional)</h6>
               <select
                 id="select-passenger"
-                class="form-select form-select-sm fs-7"
+                class="form-select form-select-sm fs-7 rounded-1 text-secondary"
               >
                 <option selected value="">Jumlah Penumpang</option>
                 <option value="2">2 Orang</option>
@@ -189,7 +189,7 @@
             <div>
               <button
                 id="search-btn"
-                class="btn btn-success"
+                class="btn btn-success rounded-1"
                 type="button"
                 disabled
               >
